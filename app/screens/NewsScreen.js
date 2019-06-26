@@ -15,7 +15,6 @@ class NewsScreen extends Component {
         <View style={{ flex: 1 }}>
           <WebView
             source={{uri: this.props.url}}
-            style={{marginTop: 20}}
           />
         </View>
       </Layout>

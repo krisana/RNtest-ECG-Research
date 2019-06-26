@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import {Platform, StyleSheet, Text, View} from 'react-native';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import Layout from '../components/Layouts';
@@ -28,19 +27,6 @@ class HomeScreen extends Component {
   }
 }
 
-const styles = StyleSheet.create({
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
-  },
-});
-
 HomeScreen.defaultProps = {
   getNews: null,
   feed: [],
@@ -48,8 +34,8 @@ HomeScreen.defaultProps = {
 };
 
 HomeScreen.propTypes = {
-  loginUser: PropTypes.func,
-  error: PropTypes.array,
+  getNews: PropTypes.func,
+  feed: PropTypes.array,
   loading: PropTypes.bool,
 };
 
